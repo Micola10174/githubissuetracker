@@ -44,11 +44,6 @@ class MainPage extends Component {
         const { getListIssues } = this.props;
         const { name, repository } = this.state;
 
-        window.scrollBy({
-            top: 200,
-            behavior: 'smooth'
-          });
-
         let page = currentPage.selected + 1;
         let data = { name, repository };
 
@@ -70,7 +65,7 @@ class MainPage extends Component {
                 {!isShow && !list_issues.length ? <Plug text="Start your search issues" /> : null}
                 {error && !list_issues.length ? <Plug text="There is no such user or repository" /> : null }
 
-                <ListIssues list_issues={list_issues} />
+                <ListIssues list_issues={list_issues} isSearch={isSearch} />
                 {
                     list_issues.length ? <ReactPaginate
                         breakClassName={'break-me'}
