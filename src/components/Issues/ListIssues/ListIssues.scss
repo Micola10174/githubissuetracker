@@ -1,0 +1,12 @@
+$float_btn_color: #d23d66;
+
+.btn-float {
+    position     : fixed;
+    bottom       : 45px;
+    right        : 24px;
+    width        : 55px;
+    height       : 55px;
+    border-radius: 50%;
+    background   : $float_btn_color;
+    cursor       : pointer;
+}

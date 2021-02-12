@@ -1,5 +1,5 @@
 import React from 'react';
-import './Plug.css';
+import './Plug.scss';
 
 const Plug = ({text}) => {
     return (

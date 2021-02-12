@@ -6,7 +6,7 @@ import { createBrowserHistory } from 'history';
 import { routerMiddleware, ConnectedRouter } from 'connected-react-router';
 import { multiClientMiddleware } from 'redux-axios-middleware';
 import reportWebVitals from './reportWebVitals';
-import './style/main.css';
+import './style/index.scss';
 
 import api from './api/api.js';
 import routes from './routes/routes';

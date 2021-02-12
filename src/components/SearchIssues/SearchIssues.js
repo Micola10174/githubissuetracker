@@ -1,6 +1,6 @@
 import React from 'react';
 import Loader from '../../components/Loader/Loader';
-import './SearchIssues.css';
+import './SearchIssues.scss';
 
 const SearchIssues = ({ changeHandler, submitHandler, name, repository, loading }) => {
     return (

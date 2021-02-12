@@ -1,0 +1,36 @@
+.title {
+    font-size  : 25px;
+    font-family: Roboto, sans-serif;
+    margin     : 20px 0;
+
+    >span {
+        font-weight: 300;
+    }
+
+    + {
+        p {
+            font-size  : 18px;
+            font-family: Roboto, sans-serif;
+            font-weight: 400;
+
+            >span {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.button.back {
+    margin-top: 10px;
+
+    >svg {
+        cursor: pointer;
+    }
+}
+
+.issue_body {
+    margin-top : 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size  : 17px;
+}

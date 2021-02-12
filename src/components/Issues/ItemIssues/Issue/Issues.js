@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getIssues, clearIssues } from '../../actions/issuesActions';
-import Loader from '../Loader/Loader';
-import './Issues.css';
+import { getIssues, clearIssues } from '../../../../actions/issuesActions';
+import Loader from '../../../Loader/Loader';
+import './Issues.scss';
 
 class Issues extends Component {
     componentDidMount() {
@@ -22,7 +22,6 @@ class Issues extends Component {
 
     render() {
         const { issues: { issues }, history } = this.props;
-        console.log(issues);
         if (Object.keys(issues).length === 0) {
             return <Loader />
         }
