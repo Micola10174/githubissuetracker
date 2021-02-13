@@ -12,7 +12,7 @@ const Pagination = ({ show, currentPage, countPage, handlePageClick}) => {
             current={currentPage}
             total={countPage}
             onPageChange={handlePageClick}
-            // maxWidth={1140}
+            maxWidth={1140}
         />
     )
 }

@@ -24,14 +24,12 @@ export default (state = INITIAL_STATE, action) => {
             return { ...state, list_issues: action.payload.data, count_page: pageCount, isSearch: true, loading: false };
         case types.GET_LIST_ISSUES_FAIL:
             return { ...state, error: true, loading: false };
+        case types.GET_ISSUES:
+            return { ...state, loading: true }
         case types.GET_ISSUES_SUCCESS:
-            return { ...state, issues: action.payload.data };
+            return { ...state, issues: action.payload.data, loading: false };
         case types.GET_ISSUES_FAIL:
             return { ...state, error: true, loading: false };
-        case types.CLEAR_LIST_ISSUES:
-            return { ...state, list_issues: [] };
-        case types.CLEAR_ISSUES:
-            return { ...state, issues: {} };
         default:
             return state;
     }

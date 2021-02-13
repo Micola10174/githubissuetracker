@@ -24,9 +24,20 @@
   >p {
     font-family: Roboto, sans-serif;
     font-weight: 400;
+
+    &.item__title {
+      max-width: 750px;
+    }
   }
 
   span {
     color: #999;
+  }
+}
+
+
+@media (max-width: 768px) {
+  p.item__title {
+    max-width: 250px !important;
   }
 }

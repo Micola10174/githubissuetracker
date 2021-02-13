@@ -25,15 +25,3 @@ export const getIssues = (data, number) => {
         }
     };
 }
-
-export const clearListIssues = () => {
-    return{
-        type: types.CLEAR_LIST_ISSUES,
-    }
-}
-
-export const clearIssues = () => {
-    return{
-        type: types.CLEAR_ISSUES,
-    }
-}
