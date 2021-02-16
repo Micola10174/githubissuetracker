@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import SearchIssues from '../SearchIssues/SearchIssues';
 import { getListIssues } from '../../actions/issuesActions';
-import Plug from '../Plug/Plug';
-import Loader from '../Loader/Loader';
+import Plug from '../HelperComponents/Plug/Plug';
+import Loader from '../HelperComponents/Loader/Loader';
 import './Main.scss';
 
 class Main extends Component {
@@ -20,7 +20,6 @@ class Main extends Component {
 
     render() {
         const { issues: { loading, error }, history } = this.props;
-
         return (
             <div className="container">
                 <SearchIssues
@@ -29,6 +28,7 @@ class Main extends Component {
                     loading={loading}
                     history={history}
                 />
+                {!loading && !error ?  <h1>Start searching for issues</h1> : null}
                 {loading ? <Loader /> : null}
                 {error ? <Plug text='User or repository not found' subtext="Please repeat your request" /> : null }
             </div>

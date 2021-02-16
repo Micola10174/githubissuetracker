@@ -9,4 +9,14 @@ $float_btn_color: #d23d66;
     border-radius: 50%;
     background   : $float_btn_color;
     cursor       : pointer;
+
+    img {
+        width: 100%;
+        transform: rotate(180deg);
+        transition: .5s ease-in-out;
+        &.active{
+            transform: rotate(0);
+        }
+        
+    }
 }

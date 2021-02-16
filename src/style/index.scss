@@ -1,2 +1,22 @@
-@import './reset.scss';
-@import './base.scss';
+@font-face {
+    font-family: "LatoBlack";
+    src: url("../assets/fonts/Lato/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: "LatoBold";
+    src: url("../assets/fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "LatoLight";
+    src: url("../assets/fonts/Lato/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "LatoBlackItalic";
+    src: url("../assets/fonts/Lato/Lato-BlackItalic.ttf");
+}
+
+@import "./reset.scss";
+@import "./base.scss";

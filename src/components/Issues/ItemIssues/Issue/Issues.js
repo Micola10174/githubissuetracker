@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import PropTypes from 'prop-types';
 import { getIssues } from '../../../../actions/issuesActions';
-import Loader from '../../../Loader/Loader';
+import Loader from '../../../HelperComponents/Loader/Loader';
 import './Issues.scss';
 
 const Issues = ({history, match}) => {
